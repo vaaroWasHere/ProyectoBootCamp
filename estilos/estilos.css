@@ -21,3 +21,9 @@ body {
     font-family: 'Chakra Petch';
     font-size: 25px;
 }
+
+.boton:hover  {
+    background-color: rgba(71, 61, 198,0.89);
+    border-radius: 14%;
+    transform: translateY(-2.5px);
+}
