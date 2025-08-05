@@ -14,7 +14,56 @@
 
     <div class="container-fluid">
         <div class="row">
-            <h5 class="text-primary">Hello world</h5>
+          
+
+            <!-- Menú horizontal -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm">
+            <div class="container-fluid">
+                
+                <!-- Botón para responsive -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuHorizontal">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Menú alineado a la derecha -->
+                <div class="collapse navbar-collapse" id="menuHorizontal">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> <!-- AQUÍ ms-auto para alinear a la derecha -->
+
+                    <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#!/inicio">
+                        <i class="bi bi-house"></i> Conócenos
+                    </a>
+                    </li>
+
+                    <!-- Submenú desplegable -->
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle fw-semibold" href="#" role="button" data-bs-toggle="dropdown">
+                        <i class="bi bi-sun"></i> Historias
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end">
+                                <li><a class="dropdown-item" href="#">Acerca de la energia solar</a></li>
+                                <li><a class="dropdown-item" href="#">Gráficas informativas</a></li>
+                                <li><a class="dropdown-item" href="#">Innovación en Colombia</a></li>
+                                <li><a class="dropdown-item" href="#">Desarrollo sostenible</a></li>
+                
+                    </ul>
+                    </li>
+
+                    <li class="nav-item">
+                    <a class="nav-link fw-semibold" href="#!consumo">
+                        <i class="bi bi-plug"></i> Consulta tu consumo energético
+                    </a>
+                    </li>
+
+                </ul>
+                </div>
+            </div>
+            </nav>
+
+            <!-- Scripts de Bootstrap -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
         </div>
     </div>
 

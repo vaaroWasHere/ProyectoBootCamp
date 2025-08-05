@@ -7,3 +7,7 @@ body {
     margin: 0; /* Elimina márgenes */
 
 }
+
+.menu {
+    text-align: right;
+}
