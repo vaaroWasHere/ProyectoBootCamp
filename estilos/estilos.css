@@ -8,6 +8,11 @@ body {
 
 }
 
-.menu {
-    text-align: right;
+.pedro {
+    background-color: rgba(21, 14, 96, 0.89);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
 }
