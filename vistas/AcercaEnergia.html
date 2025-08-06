@@ -11,76 +11,80 @@
 
 
 
-    .uso-tarjeta {
-      background-color: #ffffff;
-      border-left: 6px solid #4B0082;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      padding: 2rem;
-      margin: 0 auto 2rem auto;
-      max-width: 900px;
-      display: flex;
-      flex-direction: row;
-      gap: 1.8rem;
-      align-items: flex-start;
-    }
+        .uso-tarjeta {
+            background-color: #ffffff;
+            border-left: 6px solid #4B0082;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin: 0 auto 2rem auto;
+            max-width: 900px;
+            display: flex;
+            flex-direction: row;
+            gap: 1.8rem;
+            align-items: flex-start;
+        }
 
-    .uso-tarjeta img {
-      width: 300px;
-      height: auto;
-      border-radius: 10px;
-      object-fit: cover;
-      flex-shrink: 0;
-    }
+        .uso-tarjeta img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
 
-    .uso-tarjeta .texto {
-      font-size: 1.05rem;
-      line-height: 1.8;
-      text-align: justify;
-      text-indent: 2em; /* Sangría en la primera línea */
-      color: #444;
-    }
+        .uso-tarjeta .texto {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            text-align: justify;
+            text-indent: 2em;
+            /* Sangría en la primera línea */
+            color: #444;
+        }
 
-    @media (max-width: 768px) {
-      .uso-tarjeta {
-        flex-direction: column;
-        text-align: center;
-      }
+        @media (max-width: 768px) {
+            .uso-tarjeta {
+                flex-direction: column;
+                text-align: center;
+            }
 
-      .uso-tarjeta img {
-        width: 100%;
-      }
+            .uso-tarjeta img {
+                width: 100%;
+            }
 
-      .uso-tarjeta .texto {
-        text-align: justify;
-        text-indent: 2em;
-      }
-    }
-      
+            .uso-tarjeta .texto {
+                text-align: justify;
+                text-indent: 2em;
+            }
+        }
+
         /* Títulos centrados y con línea decorativa */
         h2 {
             text-align: center;
-        color: #4B0082;
-        font-size: 2.4rem;
-        font-weight: 800;
-        margin-top: 40px;
-        margin-bottom: 10px;
-        padding-bottom: 10px;
-        border-bottom: 4px solid #4B0082;
-        display: inline-block;
-            display: inline-block; /* para que la línea solo abarque el texto */
+            color: #4B0082;
+            font-size: 2.4rem;
+            font-weight: 800;
+            margin-top: 40px;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 4px solid #4B0082;
+            display: inline-block;
+            display: inline-block;
+            /* para que la línea solo abarque el texto */
         }
-         h3 {
-        text-align: center;
-        color: #4B0082;
-        font-size: 1.8rem;
-        font-weight: bold;
-        text-decoration: underline;
-        margin-bottom: 10px;
-    }
+
+        h3 {
+            text-align: center;
+            color: #4B0082;
+            font-size: 1.8rem;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-bottom: 10px;
+        }
 
         .titulo-con-linea {
-            text-align: center; /* centra el h2 con línea */
+            text-align: center;
+            /* centra el h2 con línea */
         }
 
         p {
@@ -211,83 +215,92 @@
         la generación de energía a nivel de utilidades públicas.
     </p>
 
-  <div class="titulo-con-linea">
-  <h2>USO</h2>
-</div>
-
-  <div class="uso-tarjeta">
-    <img src="../imagenes/uso.jpg" alt="Paneles solares al atardecer">
-    <div class="texto">
-      En Colombia, la energía solar fotovoltaica se emplea principalmente en sistemas de generación distribuida,
-      abarcando sectores residenciales, comerciales e industriales, con énfasis en la electrificación de zonas
-      rurales no interconectadas (ZNI). Esta tecnología favorece la inclusión energética y la resiliencia del
-      sistema eléctrico mediante la provisión de energía limpia y descentralizada. Asimismo, forma parte de
-      estrategias de transición energética, facilitando la descarbonización de la matriz nacional al reducir la
-      dependencia de hidrocarburos y promover la mitigación de gases de efecto invernadero (GEI). Programas
-      sociales como Colombia Solar integran sistemas de autogeneración para poblaciones vulnerables, optimizando
-      la eficiencia energética y disminuyendo la carga financiera de subsidios públicos.
+    <div class="titulo-con-linea">
+        <h2>USO</h2>
     </div>
+
+    <div class="uso-tarjeta">
+        <style>
+            .espaciado {
+                display: block;
+                margin-bottom: 20px;
+                /* espacio debajo de la imagen */
+            }
+        </style>
+        <img src="../imagenes/uso.jpg" alt="Paneles solares al atardecer" class="espaciado">
+        <img src="../imagenes/uso1.jpg" alt="Paneles solares al atardecer">
+   
+        <div class="texto">
+            En Colombia, la energía solar fotovoltaica se emplea principalmente en sistemas de generación distribuida,
+            abarcando sectores residenciales, comerciales e industriales, con énfasis en la electrificación de zonas
+            rurales no interconectadas (ZNI). Esta tecnología favorece la inclusión energética y la resiliencia del
+            sistema eléctrico mediante la provisión de energía limpia y descentralizada. Asimismo, forma parte de
+            estrategias de transición energética, facilitando la descarbonización de la matriz nacional al reducir la
+            dependencia de hidrocarburos y promover la mitigación de gases de efecto invernadero (GEI). Programas
+            sociales como Colombia Solar integran sistemas de autogeneración para poblaciones vulnerables, optimizando
+            la eficiencia energética y disminuyendo la carga financiera de subsidios públicos.
+        </div>
 
     </div>
 
 
     <h2>¿QUÉ APORTA Y QUÉ LIMITA A LA ENERGÍA SOLAR?</h2>
 
-<style>
-    body {
-        background-color: #eee9f8;
-        font-family: sans-serif;
-        margin: 0;
-        padding: 30px;
-    }
-
-    h2 {
-        text-align: center;
-        color: #4B0082;
-        margin-bottom: 10px;
-    }
-
-    .contenedor {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 40px;
-    }
-
-    .columna {
-        flex: 1 1 400px;
-        max-width: 500px;
-    }
-
-    .columna h3 {
-        text-align: center;
-        color: #4B0082;
-        font-size: 1.6rem;
-        margin-bottom: 10px;
-    }
-
-    .tarjeta {
-        background-color: white;
-        border-radius: 16px;
-        padding: 20px;
-        margin-bottom: 20px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        color: black;
-        text-align: center;
-    }
-
-    strong {
-        display: block;
-        margin-bottom: 5px;
-    }
-
-    @media (max-width: 768px) {
-        .contenedor {
-            flex-direction: column;
-            align-items: center;
+    <style>
+        body {
+            background-color: #eee9f8;
+            font-family: sans-serif;
+            margin: 0;
+            padding: 30px;
         }
-    }
-</style>
+
+        h2 {
+            text-align: center;
+            color: #4B0082;
+            margin-bottom: 10px;
+        }
+
+        .contenedor {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 40px;
+        }
+
+        .columna {
+            flex: 1 1 400px;
+            max-width: 500px;
+        }
+
+        .columna h3 {
+            text-align: center;
+            color: #4B0082;
+            font-size: 1.6rem;
+            margin-bottom: 10px;
+        }
+
+        .tarjeta {
+            background-color: white;
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            color: black;
+            text-align: center;
+        }
+
+        strong {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
     </head>
 
     <body>
@@ -439,5 +452,32 @@
                 <a href="https://www.youtube.com/@grupocelsia" target="_blank"
                     style="color: #0077cc; text-decoration: none;">Celsia Colombia</a> en YouTube.
             </p>
-   
-</section>
+
+
+
+        </section>
+
+        <section class="video-section" style="margin: 60px auto;">
+            <h2>☀️ ¿QUÉ ES LA ENERGÍA SOLAR FOTOVOLTAICA?</h2>
+            <p>
+                Observa en menos de 2 minutos cómo el sol puede transformarse en energía para tu hogar, tu comunidad o
+                tu país.
+            </p>
+
+            <div
+                style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; width: 100%; max-width: 700px; margin-bottom: 15px;">
+                <iframe src="https://www.youtube.com/embed/h20bJDZCaCk" title="Energía solar fotovoltaica"
+                    frameborder="0"
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border-radius: 12px;"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <p style="font-size: 0.9rem; color: #666; text-align: center;">
+                Fuente: Video del canal oficial de
+                <a href="https://www.youtube.com/@grupocelsia" target="_blank"
+                    style="color: #0077cc; text-decoration: none;">Celsia Colombia</a> en YouTube.
+            </p>
+
+        </section>
