@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Testimonio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #EAEAF6;
+    }
+
+    .titulo-principal {
+      font-size: 36px;
+      font-weight: 900;
+      color: #2c7a7b;
+      text-align: center;
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+
+    .icon-mapa {
+      width: 32px;
+      height: 32px;
+      fill: #2c7a7b;
+    }
+
+    .mapa-container {
+      width: 100%;
+      max-width: 900px;
+      height: 300px;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 0 auto 40px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .testimonio {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .panel {
+      background: white;
+      border-radius: 8px;
+      padding: 25px;
+      box-shadow: 0 2px 6px rgba(75, 0, 130, 0.1); /* sombra violeta suave */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .panel img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .descripcion {
+      font-size: 18px;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: bold;
+      color: #4b0082; /* Color morado para los títulos de cada panel */
+    }
+
+    .cita {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #888;
+      padding-left: 15px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    @media (max-width: 768px) {
+      .testimonio {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h2 class="titulo-principal">
+    <svg class="icon-mapa" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5S10.62 6.5 12 6.5s2.5 1.12 2.5 2.5S13.38 11.5 12 11.5z"/>
+    </svg>
+    Finca Villamaría
+  </h2>
+
+  <div class="mapa-container">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3987.1234567890123!2d-73.124567890123!3d6.7890123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e7a0a123456789%3A0xabcdef1234567890!2sLebrijano%2C%20Santander!5e0!3m2!1ses!2sco!4v1691300000000!5m2!1ses!2sco"
+      width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <div class="testimonio">
+    <div class="panel">
+      <img src="camarasdeseguridad.jpg" alt="camarasdeseguridad" />
+      <div class="descripcion">CAMARAS DE SEGURIDAD.</div>
+      <div class="cita">"Las cámaras de seguridad con luz solar funcionan captando la energía del sol mediante paneles solares que convierten la luz en electricidad, almacenándola en baterías para alimentar la cámara de forma continua, incluso de noche o en días nublados. Al no requerir conexión eléctrica ni cableado, son ideales para lugares remotos y contribuyen a reducir costos y cuidar el medio ambiente. Con funciones como visión nocturna y alertas en tiempo real, ofrecen una vigilancia eficiente, autónoma y sostenible."</div>
+    </div>
+    <div class="panel">
+      <img src="alumbradopublico.jpg" alt="alumbradopublico" />
+      <div class="descripcion">ALUMBRADO PÚBLICO EN CARRETERA.</div>
+      <div class="cita">"El alumbrado público con energía solar para una finca utiliza paneles solares instalados en el terreno para captar energía durante el día, que se almacena en baterías. Por la noche, esta energía alimenta luminarias LED distribuidas estratégicamente en caminos, áreas de trabajo y zonas comunes de la finca. Es un sistema autónomo, ecológico y económico..."</div>
+    </div>
+    <div class="panel">
+      <img src="foto3.jpg" alt="Persona 3" />
+      <div class="descripcion">VIVIENDA DE EMPLEADOS.</div>
+      <div class="cita">"Antes no teníamos luz por la noche y usábamos lámparas precarias. Con los paneles solares ahora tenemos luz segura para nuestras casas, podemos cargar celulares, usar ventiladores y conservar alimentos..."</div>
+    </div>
+    <div class="panel">
+      <img src="foto4.jpg" alt="Persona 4" />
+      <div class="descripcion">ALUMBRADO CASA/QUIOSCO.</div>
+      <div class="cita">"En nuestra casa usamos energía solar para iluminar todas las habitaciones sin depender de la red eléctrica, lo que nos ha ayudado a reducir costos y tener luz segura y constante..."</div>
+    </div>
+  </div>
+
+</body>
+</html>
