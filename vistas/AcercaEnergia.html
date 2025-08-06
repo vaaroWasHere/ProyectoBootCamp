@@ -1,0 +1,269 @@
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #333;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            color: #3c247d;
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            text-align: justify;
+            line-height: 1.6;
+            font-size: 1rem;
+            margin: 0 auto 40px;
+            max-width: 900px;
+            padding: 0 20px;
+        }
+
+        .contenedor-solar {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            padding: 40px 20px;
+            max-width: 1000px;
+            margin: auto;
+            flex-wrap: wrap;
+        }
+
+        .contenedor-solar img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .texto-solar {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        table {
+            width: 95%;
+            margin: 0 auto 40px;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th,
+        td {
+            padding: 16px;
+            font-size: 1rem;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f0dfff;
+            color: #3c247d;
+        }
+
+        tr:nth-child(even) {
+            background-color: #fafafa;
+        }
+
+        td:first-child {
+            background-color: #e8f7e8;
+        }
+
+        td:nth-child(2) {
+            background-color: #ffe9e9;
+        }
+
+        .descripcion {
+            font-weight: normal;
+            display: block;
+            margin-top: 5px;
+            color: #555;
+        }
+
+        /* Sección del video */
+        .video-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: #ffffff;
+            padding: 40px 20px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+
+        .video-section h2 {
+            color: #ff9900;
+        }
+
+        .video-section p {
+            text-align: center;
+            color: #444;
+            max-width: 700px;
+        }
+
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            width: 100%;
+            max-width: 700px;
+            border-radius: 12px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            border: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>ENERGÍA SOLAR</h2>
+    <p>
+        La energía solar fotovoltaica (PV) es una tecnología altamente flexible que puede producirse en grandes plantas
+        para aprovechar las economías de escala, pero también puede instalarse en unidades muy pequeñas. Esto posibilita
+        diversas aplicaciones, abarcando desde pequeños sistemas domésticos en techos hasta grandes instalaciones para
+        la generación de energía a nivel de utilidades públicas.
+    </p>
+
+    <div class="contenedor-solar">
+        <img src="../imagenes/uso.jpg" alt="Paneles solares al atardecer">
+        <div class="texto-solar">
+            <strong>USO:</strong><br>
+            En Colombia, la energía solar fotovoltaica se emplea principalmente en sistemas de generación distribuida,
+            abarcando sectores residenciales, comerciales e industriales, con énfasis en la electrificación de zonas
+            rurales no interconectadas (ZNI). Esta tecnología favorece la inclusión energética y la resiliencia del
+            sistema eléctrico mediante la provisión de energía limpia y descentralizada. Asimismo, forma parte de
+            estrategias de transición energética, facilitando la descarbonización de la matriz nacional al reducir la
+            dependencia de hidrocarburos y promover la mitigación de gases de efecto invernadero (GEI). Programas
+            sociales como Colombia Solar integran sistemas de autogeneración para poblaciones vulnerables, optimizando
+            la eficiencia energética y disminuyendo la carga financiera de subsidios públicos.
+
+        </div>
+    </div>
+
+    <h2>¿QUÉ APORTA Y QUÉ LIMITA A LA ENERGÍA SOLAR?</h2>
+    <table>
+        <tr>
+            <th>VENTAJAS</th>
+            <th>DESVENTAJAS</th>
+        </tr>
+        <tr>
+            <td>
+                <strong>Abundante radiación solar</strong>
+                <span class="descripcion">Colombia recibe en promedio entre 4 y 6 kWh/m² diarios, ideal para generación
+                    solar.</span>
+            </td>
+            <td>
+                <strong>Alta inversión inicial</strong>
+                <span class="descripcion">Equipos, instalación y mantenimiento técnico pueden ser costosos al
+                    inicio.</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <strong>Fuente limpia y renovable</strong><br>
+                <span class="descripcion">Reduce emisiones de CO₂ y contaminación ambiental.</span>
+            </td>
+            <td>
+                <strong>Intermitencia</strong><br>
+                <span class="descripcion">La generación depende de las condiciones climáticas y la luz solar
+                    disponible.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Cobertura en zonas rurales</strong><br>
+                <span class="descripcion">Permite llevar energía a regiones apartadas donde no llega la red
+                    eléctrica.</span>
+            </td>
+            <td>
+                <strong>Falta de infraestructura</strong><br>
+                <span class="descripcion">En algunas regiones aún no hay redes, ni políticas que faciliten su
+                    expansión.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Reducción de costos a largo plazo</strong><br>
+                <span class="descripcion">Aunque la inversión inicial es alta, el mantenimiento es bajo y la energía es
+                    gratuita.</span>
+            </td>
+            <td>
+                <strong>Gestión de residuos</strong><br>
+                <span class="descripcion">Paneles solares tienen vida útil (20–30 años) y requieren manejo adecuado al
+                    desecharse.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Impulso económico y empleo</strong><br>
+                <span class="descripcion">Fomenta nuevos negocios verdes y crea empleos en instalación, mantenimiento y
+                    tecnología.</span>
+            </td>
+            <td>
+                <strong>Dependencia tecnológica</strong><br>
+                <span class="descripcion">Muchos componentes aún se importan, lo que puede afectar costos y
+                    disponibilidad.</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <strong>Innovación nacional</strong><br>
+                <span class="descripcion">Desarrollo de tecnologías locales como el sistema <strong>Zentrack</strong>,
+                    mejora la eficiencia.</span>
+            </td>
+            <td>
+                <strong>Impacto ambiental en fabricación</strong><br>
+                <span class="descripcion">La producción de paneles genera residuos y usa materiales
+                    contaminantes.</span>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h2>DATOS CURIOSOS</h2>
+    <p>
+        1. Colombia cuenta con un potencial técnico-económico solar estimado en aproximadamente 8.000 GW para proyectos mayores a 50 MW, distribuidos por todo el territorio, lo que supera ampliamente la capacidad instalada actual, que a finales de 2024 fue de casi 2 GW.
+        <br><br>
+        2. La región del Caribe, especialmente La Guajira, es estratégica para la expansión de energías renovables, con un alto potencial solar complementado con recursos eólicos, representando una gran oportunidad para la generación local descentralizada y el desarrollo socioeconómico regional.
+        <br><br>
+        3. En el marco del Plan Energético Nacional 2022-2052, la energía solar es un pilar fundamental para la transición energética en Colombia, con metas ambiciosas para aumentar la capacidad instalada y fomentar comunidades energéticas que permitan a grupos locales generar, consumir y vender energía colectiva y sosteniblemente.
+        <br><br>
+        4. El crecimiento de la energía solar está asociado a desafíos regulatorios, económicos y sociales que afectan el ritmo de implementación, por lo cual se requieren políticas integrales, inversión sostenible y diálogo con comunidades para garantizar equidad y beneficios locales.
+    </p>
+
+    <section class="video-section">
+        <h2>☀️ ¿Qué es la energía solar fotovoltaica?</h2>
+        <p>
+            Observa en menos de 2 minutos cómo el sol puede transformarse en energía para tu hogar, tu comunidad o tu
+            país.
+        </p>
+        <div class="video-container">
+            <iframe src="https://www.youtube.com/embed/h20bJDZCaCk" title="Energía solar fotovoltaica"
+                allowfullscreen></iframe>
+        </div>
+    </section>
+
+</body>
