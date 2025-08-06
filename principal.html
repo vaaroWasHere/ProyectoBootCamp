@@ -18,12 +18,14 @@
 
   <script src="codigo/DesarrolloSostenible.js"></script>
   <script src="codigo/ControladorenColombia.js"></script>
-  <script src="codigo/ControladorGraficas.js"></script>
-  <script src="codigo/ControladorAcercaDe.js"></script>
+  <script src="codigo/ControladorAcerca.js"></script>
   <script src="codigo/ControladorConsumoEnergetico.js"></script>
-  <script src="/codigo/app.js"></script>
+  <script src="codigo/app.js"></script>
+  <script src="codigo/servicioConsultas.js"></script>
+  <script src="codigo/controladorRadiacionSolar.js"></script> 
 </head>
-
+    
+        
 <body class="container py-4">
   <div class="pedro">
     <div class="container-fluid">
@@ -57,8 +59,11 @@
                     <li>
                       <a class="dropdown-item" href="vistas/AcercaEnergia.html">Acerca de la energía solar</a>
                     </li>
-                    <li>
-                      <a class="dropdown-item" href="vistas/GraficasInformativas.html">Gráficas informativas</a>
+                
+    
+                     <li>
+                      <a class="dropdown-item"  href="#!/radiacion">Gráficas informativas</a>
+                      
                     </li>
                     <li>
                       <a class="dropdown-item" href="vistas/InnovaciónenColombia.html">Innovación en Colombia</a>
@@ -77,8 +82,7 @@
                     <i class="bi bi-plug"></i> Consulta tu consumo energético
                   </a>
                 </li>
-
-
+                
 
               </ul>
             </div>
@@ -87,6 +91,7 @@
       </div>
     </div>
   </div>
+
 
   <div ng-view></div>
 
@@ -100,7 +105,11 @@
       ambientes, instituciones y entidades, de forma práctica, consciente y sostenible.
     </p>
   </div>
-
+        </div>
+    </div>
 </body>
+
+
+
 
 </html>

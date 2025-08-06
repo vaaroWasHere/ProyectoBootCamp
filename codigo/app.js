@@ -1,8 +1,9 @@
-const app = angular.module('appProyecto', ['ngRoute']); 
+var app = angular.module("appProyecto", ["ngRoute"]);
 
-app.config(function($routeProvider) {
+
+app.config(function ($routeProvider) {
   $routeProvider
-   
+
     .when('/historias', {
       templateUrl: 'vistas/Historias.html',
       controller: 'ControladorHistorias'
@@ -21,12 +22,25 @@ app.config(function($routeProvider) {
       templateUrl: 'vistas/GraficasInformativas.html',
       controller: 'ControladorGraficas'
     })
-     .when('/InnovacionenColombia', {
+    .when('/InnovacionenColombia', {
       templateUrl: 'vistas/InnovaciónenColombia.html',
       controller: 'ControladorenColombia'
     })
-     .when('/DesarrolloSostenible', {
+    .when('/DesarrolloSostenible', {
       templateUrl: 'vistas/DesarrolloSostenible.html',
       controller: 'DesarrolloSostenible'
     })
+
+
+    .when("/radiacion", {
+      templateUrl: "vistas/RadiacionSolar.html",
+      controller: "ControladorRadiacionSolar"
+    })
+
+    // otras rutas
+    .otherwise({
+      redirectTo: "/inicio"
+    });
+
 });
+
