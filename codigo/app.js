@@ -2,10 +2,7 @@ const app = angular.module('appProyecto', ['ngRoute']);
 
 app.config(function($routeProvider) {
   $routeProvider
-    .when('/conocenos', {
-      templateUrl: 'vistas/Conocenos.html',
-      controller: 'ControladorConocenos'
-    })
+   
     .when('/historias', {
       templateUrl: 'vistas/Historias.html',
       controller: 'ControladorHistorias'
@@ -15,16 +12,16 @@ app.config(function($routeProvider) {
       controller: 'ControladorConsumoEnergetico'
     })
 
-    .when('/AcercadelaEnergiaSolar', {
-      templateUrl: 'vistas/AcercadelaEnergia',
-      controller: 'ControladorAcercaDe'
+    .when('/AcercaEnergia', {
+      templateUrl: 'vistas/AcercaEnergia.html',
+      controller: 'ControladorAcerca'
     })
     .when('/GraficasInformativas', {
-      templateUrl: 'vistas/GraficasInformativas',
+      templateUrl: 'vistas/GraficasInformativas.html',
       controller: 'ControladorGraficas'
     })
      .when('/InnovacionenColombia', {
-      templateUrl: 'vistas/InnovaciónenColombia',
+      templateUrl: 'vistas/InnovaciónenColombia.html',
       controller: 'ControladorenColombia'
     })
      .when('/DesarrolloSostenible', {
