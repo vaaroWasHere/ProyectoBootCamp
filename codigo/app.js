@@ -14,8 +14,21 @@ app.config(function($routeProvider) {
       templateUrl: 'vistas/ConsumoEnergetico.html',
       controller: 'ControladorConsumoEnergetico'
     })
- 
-    .otherwise({
-      redirectTo: '/conocenos' // Página por defecto
-    });
+
+    .when('/AcercadelaEnergiaSolar', {
+      templateUrl: 'vistas/AcercadelaEnergia',
+      controller: 'ControladorAcercaDe'
+    })
+    .when('/GraficasInformativas', {
+      templateUrl: 'vistas/GraficasInformativas',
+      controller: 'ControladorGraficas'
+    })
+     .when('/InnovacionenColombia', {
+      templateUrl: 'vistas/InnovaciónenColombia',
+      controller: 'ControladorenColombia'
+    })
+     .when('/DesarrolloSostenible', {
+      templateUrl: 'vistas/DesarrolloSostenible.html',
+      controller: 'DesarrolloSostenible'
+    })
 });
