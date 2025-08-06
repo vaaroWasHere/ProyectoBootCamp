@@ -12,10 +12,11 @@ app.config(function($routeProvider) {
       controller: 'ControladorConsumoEnergetico'
     })
 
-    .when('/AcercaEnergia', {
+    .when('/Acerca', {
       templateUrl: 'vistas/AcercaEnergia.html',
       controller: 'ControladorAcerca'
     })
+
     .when('/GraficasInformativas', {
       templateUrl: 'vistas/GraficasInformativas.html',
       controller: 'ControladorGraficas'
