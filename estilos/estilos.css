@@ -7,19 +7,65 @@ body {
 }
 
 
+
+.navbar .nav-link {
+    color: white !important;
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nombre {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #4B0082;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.foto {
+    display: none;
+    margin-top: 10px;
+    width: 120px;
+    border-radius: 10px;
+}
+
+.foto:target {
+    display: block;
+}
+
+.panel {
+    margin-bottom: 30px;
+}
+
+.ubicacion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5px;
+    font-size: 16px;
+    color: #4B0082;
+}
+
+.icon-ubicacion {
+    margin-right: 8px;
+}
+
 .navbar {
-  position: relative;
-  z-index: 2000;
+    position: relative;
+    z-index: 2000;
 }
 
 .dropdown-menu {
-  position: absolute;
-  z-index: 3000;
+    position: absolute;
+    z-index: 3000;
 }
 
 .cuadro {
-  position: relative;
-  z-index: 1;
+    position: relative;
+    z-index: 1;
 }
 
 .cuerpo {
@@ -61,7 +107,7 @@ body {
 
 h1 {
     text-align: center;
-    color:#4b0082; 
+    color: #4b0082;
 }
 
 h2 {
@@ -440,4 +486,15 @@ body {
     padding-left: 15px;
     font-size: 16px;
     text-align: center;
+}
+
+footer {
+    color: white;
+    text-align: center;
+    background-color: rgba(21, 14, 96, 0.89);
+    position: fixed;
+    top: 672;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 }
