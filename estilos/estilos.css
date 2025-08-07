@@ -6,6 +6,22 @@ body {
     color: #333;
 }
 
+
+.navbar {
+  position: relative;
+  z-index: 2000;
+}
+
+.dropdown-menu {
+  position: absolute;
+  z-index: 3000;
+}
+
+.cuadro {
+  position: relative;
+  z-index: 1;
+}
+
 .cuerpo {
     background-image: url(../imagenes/FondoInicio.jpg);
     background-size: cover;
