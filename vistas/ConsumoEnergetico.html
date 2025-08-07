@@ -15,7 +15,7 @@
             <div class="collapse navbar-collapse" id="menuHorizontal">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link fw-semibold" data-bs-toggle="collapse" href="#conocenosCollapse">
+                        <a class="nav-link fw-semibold" data-bs-toggle="collapse" href="#conocenosCollapse" href="../principal.html">
                             <i class="bi bi-house"></i> Conócenos
                         </a>
                     </li>
@@ -25,8 +25,9 @@
                             <i class="bi bi-sun"></i> Historias
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end">
+                            
                             <li><a class="dropdown-item" href="./AcercaEnergia.html">Acerca de la energía solar</a></li>
-                            <li><a class="dropdown-item" href="./RadiacionSolar.html">Gráficas informativas</a></li>
+                            <li> <a class="dropdown-item"  href="#!/radiacion">Gráficas informativas</a></li>
                             <li><a class="dropdown-item" href="./InnovaciónenColombia.html">Innovación en Colombia</a>
                             </li>
                             <li><a class="dropdown-item" href="./DesarrolloSostenible.html">Desarrollo sostenible</a>
@@ -45,6 +46,185 @@
     </nav>
 </div>
 
- <footer>
-    <p> VALTIKA ENERGY </p>
-  </footer>
+
+    <style>
+      body {
+        background: linear-gradient(to right, #eaeaf6, #c7c7fe);
+      }
+      .consumo-container {
+        max-width: 600px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      .form-group {
+        margin-bottom: 20px;
+      }
+
+      .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+
+      .btn-calcular {
+        background-color: #4caf50;
+        color: white;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+        width: 100%;
+      }
+
+      .btn-calcular:hover {
+        background-color: #45a049;
+      }
+
+      .result-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+
+      .result-card h3 {
+        color: #333;
+        margin-top: 0;
+      }
+
+      .result-item {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+        padding: 8px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      .result-item:last-child {
+        border-bottom: none;
+      }
+
+      .result-item.highlight {
+        background-color: #e8f5e8;
+        padding: 12px;
+        border-radius: 4px;
+        font-weight: bold;
+      }
+
+      .label {
+        font-weight: bold;
+        color: #555;
+      }
+
+      .value {
+        color: #4b0082;
+        font-weight: bold;
+      }
+
+      .recommendation {
+        margin-top: 15px;
+        padding: 10px;
+        background-color: #e3f2fd;
+        border-radius: 4px;
+        font-style: italic;
+      }
+
+      .error-message {
+        color: #f44336;
+        background-color: #ffebee;
+        padding: 10px;
+        border-radius: 4px;
+        margin-top: 10px;
+      }
+
+      .loading {
+        text-align: center;
+        color: #666;
+        font-style: italic;
+      }
+      .custom-box {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        align-items: center;
+
+        background: linear-gradient(
+          to right,
+          rgba(211, 207, 254, 0.89),
+          rgba(190, 184, 255, 0.89)
+        );
+        color: #212529;
+        border: 2px solid rgba(155, 146, 255, 0.89);
+        border-radius: 15px;
+        padding: 20px;
+        width: 450 px;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+        z-index: 9999;
+        font-family: "Segoe UI", sans-serif;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2px;
+        align-items: center;
+        justify-content: center; /* Centra las tarjetas dentro de su contenedor */
+
+        flex: 1;
+      }
+
+      .innput {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+
+        flex: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="consumo-container custom-box">
+      <h1>Calculadora de Energía Renovable</h1>
+      <p class="text-white">
+        Ingresa tu consumo mensual de energía en kWh y descubre qué porcentaje
+        podría ser cubierto con energía solar renovable.
+      </p>
+
+      <form id="consumoForm">
+        <div class="form-group">
+          <label for="consumoKWh">Consumo mensual (kWh):</label>
+          <input
+            class="innput"
+            type="number"
+            id="consumoKWh"
+            name="consumoKWh"
+            placeholder="Ej: 350"
+            min="0"
+            step="0.01"
+            required
+          />
+        </div>
+        <button type="submit" class="btn-calcular">
+          Calcular Energía Renovable
+        </button>
+      </form>
+
+      <div id="resultados"></div>
+    </div>
+
+    <script src="../codigo/ControladorConsumoEnergetico.js"></script>
+  </body>
+</html>

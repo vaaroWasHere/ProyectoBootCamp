@@ -490,11 +490,15 @@ body {
 
 footer {
     color: white;
-    text-align: center;
+    text-align: left;
     background-color: rgba(21, 14, 96, 0.89);
     position: fixed;
-    top: 672;
+    top: 680;
     left: 0;
-    width: 100%;
-    z-index: 1000;
+    width: 132%;
+  
+  
+    vertical-align: middle;
+
+
 }
