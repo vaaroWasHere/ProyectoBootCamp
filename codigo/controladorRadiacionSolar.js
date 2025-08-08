@@ -65,4 +65,6 @@ app.controller('ControladorRadiacionSolar', function ($scope, $http, ServicioCon
             }
         });
     }
+
+    
 });

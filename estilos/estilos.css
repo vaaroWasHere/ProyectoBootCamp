@@ -381,6 +381,12 @@ background: linear-gradient(to right, #eaeaf6, #c7c7fe);
 
 }
 
+.tarjeta:hover {
+  border-radius: 14%;
+  transform: translateY(-2.5px);
+  background-color: #ababf9;
+}
+
 body {
   font-family: Arial, sans-serif;
   padding: 20px;
